@@ -17,6 +17,4 @@ io.on("connection", (socket) => {
 
 app.use("/", webRoute);
 
-http.listen(3333, function () {
-    console.log("ok");
-});
+http.listen(8080, "0.0.0.0");

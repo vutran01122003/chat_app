@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(17, 153, 142), rgb(56, 239, 125));
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    background:  rgb(134, 233, 140);
+    border-bottom: 2px solid;
+    padding: 4px 8px;
+}
+
+.container {
+    border: 2px solid;
+    border-radius: 15px; 
+    overflow: hidden;
+}
+
+ul {
+    display: block;
+    width: 450px;
+    height: 600px;
+    background: rgb(193, 255, 244);
+    font-size: 18px;
+    font-weight: 600;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    
+}
+
+.ul::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+ul::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+ul::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+li {
+    display: flex;
+    max-width: 400px;
+    padding: 10px;
+    background-color: rgb(131, 255, 255);
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    margin: 5px 10px 10px 20px;
+    overflow-wrap: break-word;
+}
+
+span {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#chat-box {
+    display: flex;
+    border-top: 2px solid;
+}
+
+#chat {
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 600px;
+    border-right: 2px solid;
+}
+
+#send {
+    flex: 1;
+    background-color: transparent;
+    border: 0;
+    border-style: solid;
+    background: rgb(242, 242, 242);;
+}
+
+#send:active {
+    background:rgb(116, 235, 213);
+}
